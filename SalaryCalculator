@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static double calculateSalary(int hours, double employeePay){
+        if(hours < 0){
+            return -1;
+        }
+
+        if (employeePay < 0){
+            return -1;
+        }
+
+        double paycheck = hours * employeePay;
+        double yearlySalary = paycheck * 52;
+        double vacationHours;
+
+
+
+        return yearlySalary;
+    }
+    public static void main(String[] args) {
+        double grossIncome = calculateSalary(40, 8.50);
+        System.out.println(grossIncome);
+    }
+
+}
